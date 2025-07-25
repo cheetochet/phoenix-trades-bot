@@ -15,7 +15,7 @@ def receive_json_response(ws):
 
 @app.route('/')
 def index():
-    ws = websocket.Websocket()
+    ws = websocket.WebSocket()
     ws.connect("wss://gateway.discord.gg/?v=6&encording=json")
     heartbeat_interval = receive_json_response(ws)["d"]["heartbeat_interval"]
 
