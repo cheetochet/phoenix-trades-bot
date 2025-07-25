@@ -19,7 +19,8 @@ def index():
     ws.connect("wss://gateway.discord.gg/?v=6&encording=json")
     heartbeat_interval = receive_json_response(ws)["d"]["heartbeat_interval"]
 
-    token = "NzgxMzU3ODM5NjA4MTg0ODcy.Gcjxee.RThNACg3y3T-zVTyVtImZCjJePHO5imFwLGOJM"
+    token = "NzgxMzU3ODM5NjA4MTg0ODcy.Gw2dAQ.GJ5gjjDb_8fEGZBk9aC_4NCXCZjMproBjh3l6s"
+
     payload = {
         "op": 2,
         "d": {
