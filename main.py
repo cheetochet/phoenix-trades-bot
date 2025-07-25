@@ -41,11 +41,11 @@ def index():
             break
         event=receive_json_response(ws)
         try:
-            yield jsonify(event)
+            print(jsonify(event), file=sys.stderr)
         except:
             break
         
-    yield jsonify({"Choo Choo": "Welcome to your Flask app chetan🚅"})
+    return jsonify({"Choo Choo": "Welcome to your Flask app chetan🚅"})
 
 
 if __name__ == '__main__':
