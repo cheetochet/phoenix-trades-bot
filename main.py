@@ -41,8 +41,9 @@ def index():
             break
         event=receive_json_response(ws)
         try:
-            print(jsonify(event), file=sys.stderr)
+            return(jsonify(event))
         except:
+            return jsonify({"failed failed": "chetan🚅"})
             break
         
     return jsonify({"Choo Choo": "Welcome to your Flask app chetan🚅"})
