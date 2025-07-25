@@ -1,4 +1,4 @@
-nfrom flask import Flask, jsonify
+from flask import Flask, jsonify
 import os
 
 app = Flask(__name__)
@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    print("Hello my name is Chetan.")
     return jsonify({"Choo Choo": "Welcome to your Flask app chetan🚅"})
 
 
