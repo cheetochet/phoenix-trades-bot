@@ -36,7 +36,7 @@ def index():
 
     count = 0
     while True:
-        count++
+        count = count + 1
         if count > 10:
             break
         event=receive_json_response(ws)
